@@ -70,7 +70,7 @@
             
             
               <div class="version">
-                1.2_alpha
+                1.3
               </div>
             
           
@@ -97,7 +97,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Inary Commands</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basics of INARY</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="works.html">How inary transactions works?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html">How to install a new package?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repository.html">Repository Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Package Installing and Upgrading Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emerge.html">How to build a package to install? (emerge)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emerge.html#id1">How to build a package to install? (emerge)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remove.html">Removal Operations</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../faqs.html">Frequently Asked Questions</a></li>
@@ -165,6 +169,12 @@
             
   <div class="section" id="basics-of-inary">
 <h1>Basics of INARY<a class="headerlink" href="#basics-of-inary" title="Permalink to this headline">¶</a></h1>
+<p>In these pages, I will explain how you can continue your life using inary.</p>
+<p>There will be many detailed uses and hints from installing, removing packages and repos, to searching for the package or file you are looking for, or even commands that will help you extract the tree of dependency (except for packers, I don’t know why).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the commands here are simply transferred to avoid the eye of the end user. If you want to dig a little more and see the detailed information, you can try to review the “–debug” and “–verbose” parameters. Commands given with these parameters will come with many different control outputs.</p>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="works.html">How inary transactions works?</a><ul>
@@ -175,7 +185,34 @@
 <li class="toctree-l2"><a class="reference internal" href="works.html#okay-other-punches"><strong>Okay, other punches?</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="install.html">How to install a new package?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repository.html">Repository Operations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="repository.html#what-is-repository">What is repository?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repository.html#how-to-add-a-repository">How to add a repository?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repository.html#how-do-i-know-which-repository-to-add">How do I know which repository to add?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repository.html#how-do-i-update-repositories">How do I update repositories?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repository.html#how-to-list-the-repositories">How to list the repositories?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repository.html#what-can-i-do-to-fiddling-repositories">What can I do to fiddling repositories?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="repository.html#disabling-repository">Disabling Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="repository.html#removing-repository">Removing Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="repository.html#enabling-repository">Enabling Repository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Package Installing and Upgrading Operations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#how-to-install-a-new-package">How to install a new package?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#where-can-i-see-the-all-packages-in-repositories">Where can I see the all packages in repositories?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#how-do-i-find-the-right-package">How do I find the right package?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#how-do-i-install-it">How do I install it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#where-can-i-see-the-installed-packages">Where can I see the installed packages?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#where-are-newests-packages">Where are newests packages?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#how-can-i-upgrade-newests-packages">How can I upgrade newests packages?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#how-can-i-downgrade-packages-whether-they-are-broken">How can I downgrade packages whether they are broken?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="emerge.html">How to build a package to install? (emerge)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emerge.html#id1">How to build a package to install? (emerge)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remove.html">Removal Operations</a></li>
 </ul>
 </div>
 </div>
@@ -199,7 +236,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016-2019 Zaryob.
+        &copy; Copyright 2016-2020 Zaryob.
       Last updated on May 17, 2020.
 
     </p>
@@ -222,7 +259,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'1.2_alpha',
+            VERSION:'rc',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false,

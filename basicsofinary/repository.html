@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Repository Operations &mdash; Inary Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+      <link rel="search" type="application/opensearchdescription+xml" title="Search within Inary Documentation" href="../_static/opensearch.xml"/>
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="../about.html"/>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Inary Documentation" href="../index.html"/>
+        <link rel="up" title="Basics of INARY" href="index.html"/>
+        <link rel="next" title="Package Installing and Upgrading Operations" href="install.html"/>
+        <link rel="prev" title="How inary transactions works?" href="works.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Inary
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About Inary Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation of Inary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Inary Commands</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Basics of INARY</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="works.html">How inary transactions works?</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Repository Operations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-repository">What is repository?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-add-a-repository">How to add a repository?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-know-which-repository-to-add">How do I know which repository to add?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-update-repositories">How do I update repositories?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-list-the-repositories">How to list the repositories?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-can-i-do-to-fiddling-repositories">What can I do to fiddling repositories?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#disabling-repository">Disabling Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#removing-repository">Removing Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enabling-repository">Enabling Repository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Package Installing and Upgrading Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emerge.html">How to build a package to install? (emerge)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emerge.html#id1">How to build a package to install? (emerge)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remove.html">Removal Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Inary</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Basics of INARY</a> &raquo;</li>
+        
+      <li>Repository Operations</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="repository-operations">
+<h1>Repository Operations<a class="headerlink" href="#repository-operations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-repository">
+<h2>What is repository?<a class="headerlink" href="#what-is-repository" title="Permalink to this headline">¶</a></h2>
+<p>With its simple definition, package repositories consist of binary and source packages. These repositories make it easy to build dependency trees and manage packages. Repositories for inary are listed on our site. Let’s start with adding any of these repositories.</p>
+</div>
+<div class="section" id="how-to-add-a-repository">
+<h2>How to add a repository?<a class="headerlink" href="#how-to-add-a-repository" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary ar try_repo https://master.dl.sourceforge.net/project/sulinos/SulinRepository/inary-index.xml
+Repository <span class="s2">&quot;try_repo&quot;</span> added to system.
+Updating package repository: <span class="s2">&quot;try_repo&quot;</span>
+Package database updated.
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-do-i-know-which-repository-to-add">
+<h2>How do I know which repository to add?<a class="headerlink" href="#how-do-i-know-which-repository-to-add" title="Permalink to this headline">¶</a></h2>
+<p>I said that the repositories are divided into two. Binary warehouses contain ready-made packages. If you are a normal user, you can continue your life without using another warehouse, as we share on our site.
+Source repositories require build from scratch. I will explain later how to do it.</p>
+</div>
+<div class="section" id="how-do-i-update-repositories">
+<h2>How do I update repositories?<a class="headerlink" href="#how-do-i-update-repositories" title="Permalink to this headline">¶</a></h2>
+<p>As new packages are added, the package catalog of the warehouse is renewed. Following the changes from the renewed package catalog is the most important job of a package manager. For this reason, we want the user to do it manually. We don’t have a command for this …</p>
+<p>Just joke :smile:… The command is this:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary ur try_repo
+Updating package repository: <span class="s2">&quot;try_repo&quot;</span>
+Package database updated.
+</pre></div>
+</div>
+<p>If you need update all repositories same time.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary ur
+Updating package repository: <span class="s2">&quot;try_repo&quot;</span>
+Updating package repository: <span class="s2">&quot;source_repo&quot;</span>
+Updating package repository: <span class="s2">&quot;local_repo&quot;</span>
+Package database updated.
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-list-the-repositories">
+<h2>How to list the repositories?<a class="headerlink" href="#how-to-list-the-repositories" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary lr
+try_repo <span class="o">[</span>active<span class="o">]</span>
+   https://master.dl.sourceforge.net/project/sulinos/SulinRepository/inary-index.xml
+source_repo <span class="o">[</span>inactive<span class="o">]</span>
+   https://gitlab.com/sulinos/repositories/SulinRepository/-/raw/master/inary-index.xml
+</pre></div>
+</div>
+</div>
+<div class="section" id="what-can-i-do-to-fiddling-repositories">
+<h2>What can I do to fiddling repositories?<a class="headerlink" href="#what-can-i-do-to-fiddling-repositories" title="Permalink to this headline">¶</a></h2>
+<p>In other package management systems, you are asked to download tons of data every time you update your repositories. Sometimes the warehouse we have installed to add a package can be a lot of trouble. At this stage, inary offers two options. Either you delete the repository forever (or until your pleasure re-adds), or keep it in your system and deactive it. In this case, the deactive repo is not included in the package lists as if it were removed from the system until you activate it or remove it. That is, you can keep this repositories away from package management by preserving the commodity. Sometimes the package management system does this automatically. As soon as repos that are incompatible with your distro are added, they are deactive so preserving your system to broken and uncompitable packages.</p>
+<div class="section" id="disabling-repository">
+<h3>Disabling Repository<a class="headerlink" href="#disabling-repository" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary dr try_repo
+</pre></div>
+</div>
+<p>This command does not output, but you already know how to check the repository list: joy:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary lr
+try_repo <span class="o">[</span>inactive<span class="o">]</span>
+   https://master.dl.sourceforge.net/project/sulinos/SulinRepository/inary-index.xml
+</pre></div>
+</div>
+</div>
+<div class="section" id="removing-repository">
+<h3>Removing Repository<a class="headerlink" href="#removing-repository" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>this process may be destructive for your repo list. Please not forget your repo link or back up it</p>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary rr try_repo
+Repository <span class="s2">&quot;try_repo&quot;</span> removed from system.
+</pre></div>
+</div>
+</div>
+<div class="section" id="enabling-repository">
+<h3>Enabling Repository<a class="headerlink" href="#enabling-repository" title="Permalink to this headline">¶</a></h3>
+<p>Let’s say we needed a warehouse that was disable later, then it will disappear. That’s when you’ll have to get it back.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It will take long time. And you will wait without any output.</p>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary er try_repo
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install.html" class="btn btn-neutral float-right" title="Package Installing and Upgrading Operations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="works.html" class="btn btn-neutral" title="How inary transactions works?" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2020 Zaryob.
+      Last updated on May 17, 2020.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> and ❤️  using a custom <a href="https://github.com/LinxiFan/Sphinx-theme">theme</a> based on <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'rc',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  false,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
